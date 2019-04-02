@@ -3,7 +3,7 @@ import './City.scss'
 
 export default class City extends Component{
   render(){
-    const {id, city, country, ranking, overallrating, stability, healthcare, environment, education, infrastructure, img} = this.props.city
+    const {city, country, ranking, overallrating, stability, healthcare, environment, education, infrastructure, img} = this.props.city
     return(
       <section>
         <div className="img-container">
@@ -12,7 +12,7 @@ export default class City extends Component{
             <div className="city-ranking">
               {ranking}
             </div>
-            <div>
+            <div className="city-points">
               <h1>{city}, {country}</h1>
               <h2>Overall rating: {overallrating}</h2>
               <h4>Stability:{stability}</h4>

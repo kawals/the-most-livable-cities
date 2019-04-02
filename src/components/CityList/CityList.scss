@@ -1,7 +1,7 @@
 @import '../../App.scss';
 
 .cityList {
-  width: 70vw;
+  width: 60vw;
   margin: 0 auto;
   padding: 2rem 0;
 }
@@ -16,16 +16,35 @@
     display: block;
   }
 }
+
+@media only screen and (min-width : 321px) {
+  .cityList {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+  }
+  .cityListGrid {
+    margin: 2rem 0;
+  }
+}
+
 @media screen and (min-width:768px) {
   .cityList {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 1.5rem;
+    width: 70vw;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+  .cityListGrid {
+    margin: 2.5rem 0;
   }
 }
 @media screen and (min-width:992px) {
   .cityList {
-    display: block;
+    width: 60vw;
     margin: 0 auto;
+    padding: 2rem 0;
+  }
+  .cityListGrid {
+    margin: 3rem 0;
   }
 }
